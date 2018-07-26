@@ -1,17 +1,13 @@
-
-const axios = require('axios')
-
 /*
    Gets a fantasy name
-   @return {string} - Result of the coin toss
+   @param {string} - Type of Name to Generate
+   @return {string} - Name Generated
 */ 
-module.exports = async function(){
 
-    try {
-        let result = await axios.get('https://donjon.bin.sh/name/rpc.cgi?type=Human+Male&n=1')
-        return Promise.resolve(result.data);
-    } catch (e){
-        throw new Error(e)
-    }
+let generate_name = require('./lib/name_generator');
+
+module.exports = function(type){
+
+    return generate_name(type);
 
  }

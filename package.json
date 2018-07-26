@@ -16,7 +16,4 @@
     "url": "https://gitlab.com/infamoustrey/d20js/issues"
   },
   "homepage": "https://gitlab.com/infamoustrey/d20js#README",
-  "dependencies": {
-    "axios": "^0.18.0"
-  }
 }

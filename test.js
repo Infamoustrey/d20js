@@ -6,5 +6,4 @@ console.log( d20js.roll(3, 'd20') )
 
 console.log('Toss a coin, result: ' + d20js.coin())
 
-d20js.name()
-    .then(name => console.log('Rando Fantasy Name: ' + name ) )
+console.log('Egyptian Name: ' + d20js.name('egyptian') )
