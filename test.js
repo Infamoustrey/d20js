@@ -4,10 +4,10 @@ import d20 from './index';
 test('coin flip returns heads or tails', t => {
     let toss = d20.coin();
     t.true(toss == 'heads' || toss == 'tails')
-});
+})
 
 test('name generator returns name', t => {
-    let name = d20.name('egyptian');
+    let name = d20.name('english');
     t.true( typeof name == 'string' && name.length > 0 )
 })
 
